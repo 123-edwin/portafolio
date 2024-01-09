@@ -27,18 +27,7 @@ import youTubeIcon from "../images/socials/youtube.svg";
  */
 
 const Footer = (props) => {
-  const {
-    devDotTo,
-    email,
-    gitHub,
-    instagram,
-    linkedIn,
-    medium,
-    name,
-    primaryColor,
-    twitter,
-    youTube,
-  } = props;
+  const { devDotTo, email, gitHub, instagram, linkedIn, medium, name, twitter, youTube } = props;
 
   return (
     <div
@@ -49,8 +38,8 @@ const Footer = (props) => {
         alignItems: "center",
         gap: "2.5rem",
         padding: "5rem 0 3rem",
-        backgroundColor: primaryColor,
-        width: "100vw"
+        backgroundColor: "#097969",
+        width: "100vw",
       }}
     >
       <div
@@ -76,11 +65,7 @@ const Footer = (props) => {
           </a>
         )}
         {instagram && (
-          <a
-            href={`https://www.instagram.com/${instagram}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={`https://github.com/123-edwin`} target="_blank" rel="noopener noreferrer">
             <img src={instagramIcon} alt="Instagram" className="socialIcon" />
           </a>
         )}
@@ -135,7 +120,6 @@ Footer.propTypes = {
   primaryColor: PropTypes.string,
   twitter: PropTypes.string,
   youTube: PropTypes.string,
-
 };
 
 export default Footer;
